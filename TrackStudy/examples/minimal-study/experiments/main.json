@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "experiments": {
+    "01_baseline": {
+      "number": "01",
+      "title": "Baseline",
+      "track": "main",
+      "status": "done",
+      "brief": {
+        "experiment": "Establish the initial protocol and evaluation contract.",
+        "change": "This is the root experiment.",
+        "conclusion": "The baseline provides a traceable reference for later changes."
+      },
+      "detail": {
+        "experiment": "Run the initial method with a fixed data and evaluation protocol.",
+        "changes": [
+          {
+            "from": null,
+            "kind": "origin",
+            "summary": "Create the baseline."
+          }
+        ],
+        "conclusion": "Use this result only as the documented starting point.",
+        "caveats": [
+          "A single baseline does not establish causal effects or stability."
+        ]
+      },
+      "evidence": [
+        {
+          "id": "ev-baseline-report",
+          "type": "local",
+          "path": "evidence/baseline.md",
+          "lineStart": 1,
+          "lineEnd": 4,
+          "sourceSha256": "c0fb622f264800bae1d1a2d1aa2498ea3f7317b63336bf937e9e40c9fbf3c2b1",
+          "claimPolicy": "citable"
+        }
+      ]
+    },
+    "02_gated_method": {
+      "number": "02",
+      "title": "Gated method",
+      "track": "main",
+      "status": "done",
+      "brief": {
+        "experiment": "Test a gated module under the baseline protocol.",
+        "change": "Replace the baseline component while keeping the evaluation fixed.",
+        "conclusion": "The method improves the recorded metric in this single run."
+      },
+      "detail": {
+        "experiment": "Use the same data and evaluator while introducing a gated module.",
+        "changes": [
+          {
+            "from": "01_baseline",
+            "kind": "primary",
+            "summary": "Replace the baseline component with a gated module."
+          }
+        ],
+        "conclusion": "The observed improvement supports further validation of the gated design.",
+        "caveats": [
+          "The result is a single run and does not establish cross-seed stability."
+        ]
+      },
+      "evidence": [
+        {
+          "id": "ev-method-report",
+          "type": "local",
+          "path": "evidence/method.md",
+          "lineStart": 1,
+          "lineEnd": 5,
+          "sourceSha256": "58bff393e7550fdc5102fba285defc24dd95e4d98b92a8332b20003c989721e0",
+          "claimPolicy": "citable"
+        }
+      ]
+    }
+  }
+}

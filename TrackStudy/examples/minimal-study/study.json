@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "id": "minimal-trackstudy-example",
+    "title": "Minimal TrackStudy Example",
+    "description": "A minimal evidence-backed experiment lineage.",
+    "snapshotDate": "2026-08-18"
+  },
+  "tracks": [
+    {
+      "id": "main",
+      "label": "Main route",
+      "color": "#58a487"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-01-02",
+      "from": "01_baseline",
+      "to": "02_gated_method",
+      "type": "depends_on",
+      "kind": "evolution",
+      "label": "Replace the baseline component with a gated module",
+      "primary": true,
+      "evidence": [
+        "ev-method-report"
+      ]
+    }
+  ]
+}

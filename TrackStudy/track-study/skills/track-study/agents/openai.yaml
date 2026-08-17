@@ -1,0 +1,4 @@
+interface:
+  display_name: "TrackStudy"
+  short_description: "Turn complex research files into an evidence-backed study atlas"
+  default_prompt: "Use $track-study to organize this research repository into a validated experiment lineage and reusable web atlas."

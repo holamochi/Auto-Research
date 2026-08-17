@@ -1,0 +1,26 @@
+{
+  "name": "track-study",
+  "version": "0.1.0",
+  "description": "Build evidence-backed experiment lineages and reusable static research atlases from complex repositories.",
+  "author": {
+    "name": "ShiLong-CN",
+    "url": "https://github.com/ShiLong-CN"
+  },
+  "homepage": "https://github.com/ShiLong-CN/AutoResearch/tree/main/TrackStudy",
+  "repository": "https://github.com/ShiLong-CN/AutoResearch",
+  "license": "MIT",
+  "keywords": ["research", "provenance", "experiment-lineage", "visualization"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TrackStudy",
+    "shortDescription": "Build an evidence-backed research atlas.",
+    "longDescription": "Organize complex research files into stable experiment IDs, cited relationships, validated narratives, and a reusable static web atlas.",
+    "developerName": "ShiLong-CN",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "Turn this research repository into a validated experiment lineage.",
+      "Create a TrackStudy workspace and evidence-backed web atlas."
+    ]
+  }
+}
