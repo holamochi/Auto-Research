@@ -88,7 +88,7 @@ Then open `http://127.0.0.1:8000/web/`. Serve the study root—not only
 After this repository is published, ask Codex:
 
 ```text
-$skill-installer install https://github.com/ShiLong-CN/AutoResearch/tree/main/TrackStudy/track-study/skills/track-study
+$skill-installer install https://github.com/holamochi/Auto-Research/tree/main/TrackStudy/track-study/skills/track-study
 ```
 
 The plugin wrapper is located at `TrackStudy/track-study/` for plugin-aware distribution.
